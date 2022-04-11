@@ -1,0 +1,33 @@
+package tp5ytp6;
+
+import java.util.Scanner;
+
+public class ejercicio7 {
+
+	public static void main(String[] args) {
+
+		Scanner tecla= new Scanner(System.in);
+		System.out.println("ingrese la palabra ");
+		String palabra=tecla.nextLine();
+		
+		String [] array = palabra.split("");   //convierto un string en un array
+		int cv=0;  //contador de vocales
+		int	cc=0;	//contador de consonantes
+		for(int i =0;i<array.length;i++) {
+			if(array[i]=="a"|| array[i]=="i"|| array[i]=="e"|| array[i]=="o"|| array[i]=="u") {
+				cv++;
+			}
+			else {
+				cc++;
+			}
+		}
+		System.out.println("cantidad de vocales son: "+cv);
+		System.out.println("cantidad de consonantes son: "+cc);
+
+//	POR QUE NO ME CUENTA EL CONTADOR DE VOCALES??	
+//		for(int x=0;x<array.length;x++) {
+//			System.out.println(array[x]);
+//		}
+	}
+
+}

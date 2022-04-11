@@ -1,0 +1,37 @@
+package tp5ytp6;
+
+import java.util.Scanner;
+
+public class ejercicio6 {
+
+	public static void main(String[] args) {
+		Scanner tecla= new Scanner(System.in);
+		System.out.println("ingrese la palabra ");
+		String palabra=tecla.nextLine();
+		String [] array = palabra.split("");   //convierto un string en un array
+		String nuevo[]=new String[array.length-1];
+		int j=0;
+		
+		for(int i=array.length-1;i<0;i--) {
+			nuevo[j]=array[i];
+			j++;
+		}
+		for(int x=0;x<array.length;x++) {
+			System.out.println(array[x]);
+		}
+	
+		String inverso = String.valueOf(nuevo);   //convierto el array de caracteres(string) en un String
+		
+//		System.out.println(inverso);
+
+//		if(inverso==palabra) {
+//			System.out.println("La palabra es un palíndromo ");
+//
+//		}
+//		else {
+//			System.out.println("La palabra NO es un palíndromo ");
+//
+//		}
+	}
+
+}

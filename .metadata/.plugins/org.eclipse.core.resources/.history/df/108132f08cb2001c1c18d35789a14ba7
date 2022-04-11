@@ -1,0 +1,27 @@
+import java.util.Scanner;   //libreria scaner para escanear lo que escribimos
+
+public class ejercicio18 {
+
+	public static void main(String[] args) {
+			int k=123;
+			int aux;
+			int digito;
+			int dig2;
+			String x=String.valueOf(k);
+			for(int i=0; i < x.length(); i++) {
+					aux=k;
+					while(aux!=0) {
+						digito = aux%10;    //saco el ultimo digito del numero.
+						dig2=digito%10;
+						if(digito==dig2){
+							System.out.println("el numero es capicua");
+
+						}
+						aux=aux/10;        //este es una division entera;
+					}
+					
+				}
+			}
+	}
+
+

@@ -1,0 +1,49 @@
+package tp5ytp6;
+
+import java.util.Scanner;
+
+public class ejericico5 {
+
+	public static void main(String[] args) {
+		
+		Scanner tecla= new Scanner(System.in);
+		System.out.println("ingrese la cantidad ");
+		int cantidad=tecla.nextInt();
+		int num[]=new int[cantidad];
+		int par[]=new int[cantidad];
+		int impar[]=new int[cantidad];
+		
+		
+		for(int i=0;i<cantidad; i++) {
+		System.out.println("ingrese el numero "+(i+1));
+		 num[i]=tecla.nextInt();
+		
+	}
+		int k,j;
+		for(int i=0;i<cantidad; i++) {
+			 while(num[i]%2==0) {
+				 par[k]=num[i];
+				 k++;
+		}
+		}
+		for(int i=0;i<cantidad; i++) {
+			 while(num[i]%2!=0) {
+				 impar[j]=num[i];
+				 j++;
+		}
+		}
+		
+		
+		
+		
+		for(int i=0;i<cantidad;i++) {
+			System.out.println(impar[i]);
+			
+//			System.out.println(par[i]);
+
+		}
+		
+
+	}
+
+}

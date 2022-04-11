@@ -1,0 +1,19 @@
+package tp5ytp6;
+
+import java.util.Scanner;
+
+public class ejercicio4 {
+
+	public static void main(String[] args) {
+		Scanner tecla= new Scanner(System.in);
+
+		int a[]=new int[20];
+		for(int i =0;i<20;i++) {
+				System.out.println("ingrese el valor "+i+"del array ");
+				a[i]=tecla.nextInt();
+				
+		}
+		if()
+	}
+
+}
